@@ -1,11 +1,8 @@
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
-const navClose = document.getElementById("navClose");
+const navToggle = document.querySelector('.nav__toggle');
+const navList = document.querySelector('.nav__list');
 
-navToggle.addEventListener("click", () => {
-  navLinks.classList.add("show");
-});
-
-navClose.addEventListener("click", () => {
-  navLinks.classList.remove("show");
+navToggle.addEventListener('click', () => {
+  const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+  navToggle.setAttribute('aria-expanded', !expanded);
+  navList.classList.toggle('active');
 });
