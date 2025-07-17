@@ -1,11 +1,13 @@
-const toggleBtn = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('nav-links');
 const closeBtn = document.getElementById('close-menu');
 
-toggleBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  toggle.setAttribute('aria-expanded', menu.classList.contains('active'));
 });
 
 closeBtn.addEventListener('click', () => {
-  navLinks.classList.remove('active');
+  menu.classList.remove('active');
+  toggle.setAttribute('aria-expanded', 'false');
 });
