@@ -1,0 +1,267 @@
+:root {
+  --bg: #fafafa;
+  --text: #000;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+nav .logo {
+  flex: 1;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+header {
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-content {
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content img.header-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 5rem;
+  padding: 0 1rem;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.box {
+  padding: 1rem;
+  text-align: left;
+}
+
+.full {
+  flex: 1 1 100%;
+}
+
+.half {
+  flex: 1 1 calc(50% - 1rem);
+}
+
+.third {
+  flex: 1 1 calc(33.333% - 1rem);
+}
+
+.quarter {
+  flex: 1 1 calc(25% - 1rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+
+.highlight {
+  font-family: 'EB Garamond', 'Adobe Caslon Pro', serif;
+  font-family:  serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.section-black {
+  background: #000;
+  color: #fafafa;
+  padding: 3rem;
+  font-family: Avenir, system-ui, sans-serif;
+}
+
+.section-black .layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.section-black .box {
+  padding: 1rem;
+}
+
+.section-black h2,
+.section-black p {
+  color: #fafafa;
+}
+
+.section-black ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-black a {
+  color: inherit;          /* inherit text color (fafafa) */
+  text-decoration: underline; /* always underlined */
+  transition: none;        /* remove animation */
+}
+
+.section-black a:hover,
+.section-black a:focus {
+  color: inherit;          /* keep same color on hover/focus */
+  text-decoration: underline; /* keep underline on hover/focus */
+}
+
+.logo-strip {
+  background: #000;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.logo-strip img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+/* Footer Bar */
+.section-footer-bar {
+  padding: 1rem 3rem;
+  font-size: 0.9rem;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+  color: #aaa;
+  font-family: Avenir, sans-serif;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.footer-right p {
+  margin: 0;
+}
+
+.with-top-line {
+  border-top: 1px solid #333333;
+}
+
+@media (max-width: 768px) {
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer-right {
+    align-self: flex-end;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .section-black .half,
+  .section-black .third,
+  .section-black .quarter {
+    flex: 1 1 100%;
+  }
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-box {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .half,
+  .third,
+  .quarter {
+    flex: 1 1 100%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
