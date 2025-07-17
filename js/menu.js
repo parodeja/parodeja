@@ -1,13 +1,11 @@
-const toggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('nav-links');
-const closeBtn = document.getElementById('close-menu');
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+const navClose = document.getElementById("navClose");
 
-toggle.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  toggle.setAttribute('aria-expanded', menu.classList.contains('active'));
+navToggle.addEventListener("click", () => {
+  navLinks.classList.add("show");
 });
 
-closeBtn.addEventListener('click', () => {
-  menu.classList.remove('active');
-  toggle.setAttribute('aria-expanded', 'false');
+navClose.addEventListener("click", () => {
+  navLinks.classList.remove("show");
 });
