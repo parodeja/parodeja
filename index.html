@@ -2,32 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Parodeja — Creative Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parodeja - Creative Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/base.css" />
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="logo">Logo</a>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span>
-    </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><button class="close-menu" id="close-menu">&times;</button></li>
-    </ul>
+<nav class="navbar">
+  <div class="logo">
+    <a href="/">
+      <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="#000" aria-label="Logo" role="img">
+        <rect width="32" height="32" />
+      </svg>
+    </a>
   </div>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">&#9776;</button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><button class="nav-close" id="navClose" aria-label="Close navigation menu">&times;</button></li>
+  </ul>
 </nav>
 
-<header>
-  <h1 class="header-mark">H</h1>
+<header class="page-header">
+  <h1>Explore the Story Behind the Lens</h1>
 </header>
 
-<!-- Your container & layout content here -->
+<main class="container">
+
+  <section class="content-layout">
+    <div class="box half video-box">
+      <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen title="Featured Video"></iframe>
+    </div>
+    <div class="box half">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
+  </section>
+
+  <section class="section-dark with-top-line">
+    <div class="layout">
+      <div class="box half">
+        <h4>News</h4>
+      </div>
+      <div class="box half">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark with-top-line">
+    <div class="layout">
+      <div class="box half">
+        <h4>New Business Inquiries</h4>
+      </div>
+      <div class="box half">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark with-top-line">
+    <div class="layout">
+      <div class="box half">
+        <h4>About</h4>
+      </div>
+      <div class="box half">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="logo-strip">
+  <svg width="80" height="40" aria-label="Logo" role="img" xmlns="http://www.w3.org/2000/svg" fill="#fafafa">
+    <rect width="80" height="40" />
+  </svg>
+</div>
 
 <footer class="section-dark section-footer-bar">
   <div class="footer-flex">
