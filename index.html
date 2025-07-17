@@ -2,27 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Parodeja - Creative Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parodeja — Creative Studio</title>
   <link rel="stylesheet" href="css/base.css" />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
-  <div class="logo" aria-label="Parodeja Home">
-    <svg class="logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 30" role="img" aria-label="Parodeja Logo">
-      <rect width="150" height="30" fill="#000" />
-      <text x="10" y="20" fill="#fafafa" font-family="Arial, sans-serif" font-size="18">Parodeja</text>
+  <a href="/" class="logo">
+    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" aria-label="Logo placeholder">
+      <rect width="40" height="40" fill="#444" />
     </svg>
-  </div>
+  </a>
 
-  <div class="menu-toggle" aria-label="Toggle Menu" role="button" tabindex="0"
-       onclick="document.body.classList.toggle('menu-open')"
-       onkeypress="if(event.key==='Enter')document.body.classList.toggle('menu-open')">
-    <div></div>
-    <div></div>
-  </div>
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+  </button>
 
   <ul class="nav-links">
     <li><a href="#">About</a></li>
@@ -31,146 +27,76 @@
   </ul>
 </nav>
 
-<!-- Full screen menu for small devices -->
-<div class="mobile-menu">
+<div class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-logo">
+    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="40" height="40" fill="#fafafa" />
+    </svg>
+  </div>
   <ul>
     <li><a href="#">About</a></li>
     <li><a href="#">Features</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
-  <footer class="mobile-footer">
-    <ul class="footer-social">
+  <div class="mobile-menu-footer">
+    <ul>
       <li><a href="#">Instagram</a></li>
       <li><a href="#">Twitter</a></li>
       <li><a href="#">LinkedIn</a></li>
-    </ul>
-    <ul class="footer-social">
       <li><a href="#">Privacy Policy</a></li>
       <li>&copy; 2025 Your Magazine</li>
     </ul>
-  </footer>
+  </div>
 </div>
 
-<header>
-  <div class="header-content">
-    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" alt="Featured Portrait" class="header-image" />
-    <h1>Explore the Story Behind the Lens</h1>
-  </div>
+<header class="header">
+  <h1 class="header-mark">H</h1>
 </header>
 
 <div class="container">
-
-  <div class="layout">
-    <div class="box full">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-    </div>
-    <div class="box half">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor.</p>
-    </div>
-    <div class="box half">
-      <p>Phasellus luctus libero purus, at fermentum quam convallis quis. Nulla facilisi.</p>
-    </div>
-    <div class="box third">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="box third">
-      <p>Pellentesque habitant morbi tristique senectus et netus.</p>
-    </div>
-    <div class="box third">
-      <p>Maecenas tempus, tellus eget condimentum rhoncus.</p>
-    </div>
-    <div class="box two-third half">
-      <div class="image-box">
-        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=60" alt="Editorial Image 1">
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-    </div>
-    <div class="box third">
-      <div class="image-box">
-        <img src="https://images.unsplash.com/photo-1496284045406-daffacf8bf1e?auto=format&fit=crop&w=400&q=60" alt="Editorial Image 2">
-      </div>
-      <p>Praesent libero. Sed cursus ante dapibus diam.</p>
-    </div>
-  </div>
-
-  <!-- Video now inside a half box and fills entire width -->
-  <div class="layout video-layout">
-    <div class="box half video-box">
-      <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen title="Video"></iframe>
-    </div>
-  </div>
-
-  <div class="highlight">
-    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.”
-  </div>
-
-  <div class="layout">
-    <div class="box quarter">
-      <div class="image-box">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=60" alt="Feature 1">
-      </div>
-      <p>Feature caption goes here.</p>
-    </div>
-    <div class="box quarter">
-      <div class="image-box">
-        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=60" alt="Feature 2">
-      </div>
-      <p>Feature caption goes here.</p>
-    </div>
-    <div class="box quarter">
-      <div class="image-box">
-        <img src="https://images.unsplash.com/photo-1500530854263-4bc0b5c9f1fc?auto=format&fit=crop&w=400&q=60" alt="Feature 3">
-      </div>
-      <p>Feature caption goes here.</p>
-    </div>
-    <div class="box quarter">
-      <div class="image-box">
-        <img src="https://images.unsplash.com/photo-1500534314204-3cfb8d0200d5?auto=format&fit=crop&w=400&q=60" alt="Feature 4">
-      </div>
-      <p>Feature caption goes here.</p>
-    </div>
-  </div>
-
+  <!-- layout content can go here -->
 </div>
-  
-<div class="section-black with-top-line">
+
+<div class="section-dark with-top-line">
   <div class="layout">
     <div class="box half">
       <h4>News</h4>
     </div>
     <div class="box half">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </div>
 </div>
- 
-<div class="section-black with-top-line">
+
+<div class="section-dark with-top-line">
   <div class="layout">
     <div class="box half">
-      <h4>New Business Inquires</h4>
+      <h4>New Business Inquiries</h4>
     </div>
     <div class="box half">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </div>
 </div>
-  
-<div class="section-black with-top-line">
+
+<div class="section-dark with-top-line">
   <div class="layout">
     <div class="box half">
       <h4>About</h4>
     </div>
     <div class="box half">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </div>
 </div>
 
 <div class="logo-strip">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Letterpress_logo_sample.svg/512px-Letterpress_logo_sample.svg.png" alt="Logo Full Width" />
+  <svg width="100" height="40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="100" height="40" fill="#222" />
+  </svg>
 </div>
-  
-<footer class="section-black section-footer-bar footer-desktop">
+
+<footer class="section-dark section-footer-bar">
   <div class="footer-flex">
     <div class="footer-left">
       <ul class="footer-social">
@@ -181,12 +107,13 @@
     </div>
     <div class="footer-right">
       <ul class="footer-social">
-        <li><a href="#">Privacy Policy</a></li>         
+        <li><a href="#">Privacy Policy</a></li>
         <li>&copy; 2025 Your Magazine</li>
       </ul>
     </div>
   </div>
 </footer>
 
+<script src="js/menu.js"></script>
 </body>
 </html>
