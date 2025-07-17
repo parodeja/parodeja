@@ -4,101 +4,172 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Parodeja - Creative Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/base.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="logo">
-    <a href="/">
-      <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="#000" aria-label="Logo" role="img">
-        <rect width="32" height="32" />
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="nav__logo" aria-label="Home">
+      <!-- Simple SVG placeholder logo -->
+      <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" fill="#000"/>
+        <text x="50%" y="55%" fill="#fff" font-size="55" font-family="Arial" text-anchor="middle" dominant-baseline="middle">H</text>
       </svg>
     </a>
-  </div>
 
-  <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">&#9776;</button>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#">About</a></li>
-    <li><a href="#">Features</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><button class="nav-close" id="navClose" aria-label="Close navigation menu">&times;</button></li>
-  </ul>
-</nav>
-
-<header class="page-header">
-  <h1>Explore the Story Behind the Lens</h1>
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#">About</a></li>
+      <li class="nav__item"><a href="#">Features</a></li>
+      <li class="nav__item"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main class="container">
+<main class="main-content container">
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" alt="Featured Portrait" class="hero__image" />
+    <h1 class="hero__title">Explore the Story Behind the Lens</h1>
+  </section>
 
-  <section class="content-layout">
-    <div class="box half video-box">
-      <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen title="Featured Video"></iframe>
-    </div>
-    <div class="box half">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+  <section class="content-grid">
+    <article class="content-grid__item content-grid__item--full">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--half">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--half">
+      <p>Phasellus luctus libero purus, at fermentum quam convallis quis. Nulla facilisi.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--third">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--third">
+      <p>Pellentesque habitant morbi tristique senectus et netus.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--third">
+      <p>Maecenas tempus, tellus eget condimentum rhoncus.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--two-thirds">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=60" alt="Editorial Image 1" />
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--third">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1496284045406-daffacf8bf1e?auto=format&fit=crop&w=400&q=60" alt="Editorial Image 2" />
+      </div>
+      <p>Praesent libero. Sed cursus ante dapibus diam.</p>
+    </article>
+  </section>
+
+  <section class="video-section">
+    <div class="content-grid__item content-grid__item--half video-section__wrapper">
+      <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen title="Video"></iframe>
     </div>
   </section>
 
+  <blockquote class="highlight">
+    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.”
+  </blockquote>
+
+  <section class="content-grid features">
+    <article class="content-grid__item content-grid__item--quarter">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=60" alt="Feature 1" />
+      </div>
+      <p>Feature caption goes here.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--quarter">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=60" alt="Feature 2" />
+      </div>
+      <p>Feature caption goes here.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--quarter">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1500530854263-4bc0b5c9f1fc?auto=format&fit=crop&w=400&q=60" alt="Feature 3" />
+      </div>
+      <p>Feature caption goes here.</p>
+    </article>
+
+    <article class="content-grid__item content-grid__item--quarter">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1500534314204-3cfb8d0200d5?auto=format&fit=crop&w=400&q=60" alt="Feature 4" />
+      </div>
+      <p>Feature caption goes here.</p>
+    </article>
+  </section>
+
   <section class="section-dark with-top-line">
-    <div class="layout">
-      <div class="box half">
+    <div class="content-grid">
+      <article class="content-grid__item content-grid__item--half">
         <h4>News</h4>
-      </div>
-      <div class="box half">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+      </article>
+      <article class="content-grid__item content-grid__item--half">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+      </article>
     </div>
   </section>
 
   <section class="section-dark with-top-line">
-    <div class="layout">
-      <div class="box half">
+    <div class="content-grid">
+      <article class="content-grid__item content-grid__item--half">
         <h4>New Business Inquiries</h4>
-      </div>
-      <div class="box half">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+      </article>
+      <article class="content-grid__item content-grid__item--half">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+      </article>
     </div>
   </section>
 
   <section class="section-dark with-top-line">
-    <div class="layout">
-      <div class="box half">
+    <div class="content-grid">
+      <article class="content-grid__item content-grid__item--half">
         <h4>About</h4>
-      </div>
-      <div class="box half">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+      </article>
+      <article class="content-grid__item content-grid__item--half">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+      </article>
     </div>
   </section>
-
 </main>
 
-<div class="logo-strip">
-  <svg width="80" height="40" aria-label="Logo" role="img" xmlns="http://www.w3.org/2000/svg" fill="#fafafa">
-    <rect width="80" height="40" />
-  </svg>
-</div>
+<section class="logo-strip section-dark">
+  <div class="logo-strip__content">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Letterpress_logo_sample.svg/512px-Letterpress_logo_sample.svg.png" alt="Logo Full Width" />
+  </div>
+</section>
 
-<footer class="section-dark section-footer-bar">
-  <div class="footer-flex">
-    <div class="footer-left">
-      <ul class="footer-social">
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
-    </div>
-    <div class="footer-right">
-      <ul class="footer-social">
-        <li><a href="#">Privacy Policy</a></li>
-        <li>&copy; 2025 Parodeja</li>
-      </ul>
-    </div>
+<footer class="footer section-dark">
+  <div class="footer__content container">
+    <ul class="footer__social-list">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+
+    <ul class="footer__policy-list">
+      <li><a href="#">Privacy Policy</a></li>
+      <li>&copy; 2025 Your Magazine</li>
+    </ul>
   </div>
 </footer>
 
