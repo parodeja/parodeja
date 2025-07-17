@@ -22,8 +22,7 @@ body {
 
 /* NAVBAR */
 nav {
-  max-width: var(--max-width);
-  margin: 0 auto;
+  width: 100%;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
@@ -31,6 +30,7 @@ nav {
   border-bottom: 1px solid #ddd;
   background: #fff;
 }
+
 
 nav .logo svg {
   display: block;
@@ -195,9 +195,8 @@ nav .logo svg {
 
 /* FOOTER */
 .section-footer-bar {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 1rem;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 .footer-flex {
